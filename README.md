@@ -18,4 +18,30 @@
    10. 退出系统
 ***
 ## 程序设计
+### 类
+节点类：  
+文本文件中一行字符串为一个节点  
+节点中包含两个指针，用于实现双向链表  
+```C++
+class Node{
+   string charss;
+   int num_line;//每一行的行号
+   int num_chars;//每一行的字符数
+   Node* next;
+   Node* before;
+}
+```
+文本类：  
+包含文本的基本属性（文本行数、文本字符数）  
+包含指向节点的指针
+有多种方法，用于实现对文本的操作
+```C++
+class TxtEditor{
+   int Tline;
+   int Tchars;
+   Node* ptr;
+   Node* firstHead;
+
+}
+```
 
